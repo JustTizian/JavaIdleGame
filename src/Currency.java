@@ -1,12 +1,16 @@
 public class Currency {
 
-    double amount;
+    long amount = 100;
 
-    public void add(double _amount){
+    public void add(long _amount){
         this.amount += _amount;
     }
 
-    public double getAmount(){
+    public void subtract(long _amount){
+        this.amount -= _amount;
+    }
+
+    public long getAmount(){
         return this.amount;
     }
 }
